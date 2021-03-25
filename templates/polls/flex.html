@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<style type="text/css">
+    div {
+        background-color: green;
+    }
+</style>
+<html lang="en">
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1 align="center">Штож, походу готов</h1>
+   <p align="center"><span style="font-size: xx-large; color: green; font-family: Arial; "> <a
+            href="http://127.0.0.1:8000/flex2/">Тык для мема</a></span></p>
+
+
+    <p align="left"><b>Информация о системе:</b></p>
+    <p align="left" id="info"></p>
+    <script>
+         var info = window.navigator.userAgent
+        info1 = document.getElementById('info')
+       info1.innerHTML = info
+    </script>
+
+    <p align="left"><b>Разрешение экрана:</b></p>
+    <p align="left" id="resolution"></p>
+    <script>
+        function getResolution() {
+            var w = screen.width
+            var h = screen.height
+            var z = w + "x" + h
+            z1 = document.getElementById('resolution')
+            z1.innerHTML = z
+        }
+
+        getResolution()
+    </script>
+
+    <p align="left"><b>Браузер:</b></p>
+    <p align="left" id="browser"></p>
+    <script>
+        var code = navigator.appCodeName
+        code1 = document.getElementById('browser')
+        code1.innerHTML = code
+    </script>
+
+    <p align="left"><b>Версия браузера:</b></p>
+    <p align="left" id="browser ver"></p>
+    <script>
+        var version = navigator.appVersion
+        version1 = document.getElementById('browser ver')
+        version1.innerHTML = version
+    </script>
+
+    <p align="left"><b>Cистема:</b></p>
+    <p align="left" id="OS"></p>
+    <script>
+        var platform = navigator.platform
+        platform1 = document.getElementById('OS')
+        platform1.innerHTML = platform
+    </script>
+
+    <p align="left"><b>Язык:</b></p>
+    <p align="left" id="language"></p>
+    <script>
+        var UserLang = navigator.language || navigator.userLanguage;
+        UserLang1 = document.getElementById('language')
+        UserLang1.innerHTML = UserLang
+    </script>
+
+    <p align="left"><b>Кук:</b></p>
+    <p align="left" id="cookies"></p>
+    <script>
+        var cookie = navigator.cookieEnabled
+        cookie1 = document.getElementById('cookies')
+        cookie1.innerHTML = cookie
+    </script>
+
+</div>
+</body>
+</html>
